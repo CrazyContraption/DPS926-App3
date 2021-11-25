@@ -1,0 +1,18 @@
+#container {
+    text-align: left;
+    position: relative;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    transform: translateY(0%) !important;
+}
+.buttons-item > ion-button {
+    width: 50%;
+    height: 80%;
+}
+.buttons-item > ion-button:first-of-type {
+    margin-left: 12%;
+}
+.buttons-item > ion-button:last-of-type {
+    margin-right: 12%;
+}

@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Manager Menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Manager Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-grid>
+      <ion-row>
+        <ion-button [routerLink]="['/manager/history']" routerDirection="forward">History</ion-button>
+      </ion-row>
+      <ion-row>
+        <ion-button [routerLink]="['/manager/products/restock']" routerDirection="forward">Restock</ion-button>
+      </ion-row>
+      <ion-row>
+        <ion-button [routerLink]="['/manager/products/new']" routerDirection="forward">Add New Product</ion-button>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

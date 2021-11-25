@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>History</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">History</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container" class="history">
+    <ion-list>
+      <ion-item *ngFor="let purchase of Purchases;let index=index;" class="history-list">
+        <button (click)="purchaseSelected(index)">
+          <span>{{ purchase.name }}</span>
+          <span class="quantity">{{ purchase.quantity }}</span>
+        </button> 
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

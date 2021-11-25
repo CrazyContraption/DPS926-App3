@@ -1,0 +1,7 @@
+{
+  "name": "DPS 926 App 3",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

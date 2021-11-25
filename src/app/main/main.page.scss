@@ -1,0 +1,16 @@
+#container {
+    text-align: left;
+    position: relative;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    transform: translateY(0%) !important;
+}
+ion-col {
+    min-height: 10vh;
+    overflow-wrap: anywhere;
+}
+ion-button {
+    height: 100%;
+    width: 100%;
+}
